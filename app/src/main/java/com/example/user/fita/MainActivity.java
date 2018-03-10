@@ -1,5 +1,7 @@
 package com.example.user.fita;
 
+
+
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -11,6 +13,7 @@ import android.widget.FrameLayout;
 import com.example.user.fita.fragments.CommunityFragment;
 import com.example.user.fita.fragments.GrammerFragment;
 import com.example.user.fita.fragments.HomeFragment;
+
 
 public class MainActivity extends AppCompatActivity {
     private CommunityFragment communityFragment;
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mainNav = findViewById(R.id.nav_main);
         frameLayout = findViewById(R.id.main_frame);
 
@@ -67,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         android.support.v4.app.FragmentTransaction fragmentTransaction= getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.main_frame, fragment);
         fragmentTransaction.commit();
+
 
     }
 }
