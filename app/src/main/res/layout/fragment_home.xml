@@ -23,8 +23,6 @@
         android:orientation="horizontal"
         >
 
-
-
     </LinearLayout>
 
     <LinearLayout
