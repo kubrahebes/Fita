@@ -1,26 +1,30 @@
 package com.example.user.fita;
-
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
+    /** Duration of wait **/
+    private final int SPLASH_DISPLAY_LENGTH = 1000;
+
+    /** Called when the activity is first created. */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
         setContentView(R.layout.activity_splash);
-        Button button = (Button) findViewById(R.id.main_activity_button);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        /* New Handler to start the Menu-Activity
+         * and close this Splash-Screen after some seconds.*/
+        new Handler().postDelayed(new Runnable(){
             @Override
-            public void onClick(View view) {
-                Intent second = new Intent(SplashActivity.this, MaleFemaleActivity.class);
-                startActivity(second);
-
-
+            public void run() {
+                /* Create an Intent that will start the Menu-Activity. */
+                Intent mainIntent = new Intent(SplashActivity.this,MainActivity.class);
+                SplashActivity.this.startActivity(mainIntent);
+                SplashActivity.this.finish();
             }
-        });
+        }, SPLASH_DISPLAY_LENGTH);
     }
 }
