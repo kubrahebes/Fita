@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "843575948061",
+    "firebase_url": "https://fita-5c83b.firebaseio.com",
+    "project_id": "fita-5c83b",
+    "storage_bucket": "fita-5c83b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843575948061:android:a0945be15a4e0b0d",
+        "android_client_info": {
+          "package_name": "com.example.user.fita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843575948061-b2c6cj2l4e33mfevomlrjs1lqi87j2lr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.fita",
+            "certificate_hash": "16c3e7204508879c0196173edc4e240b26c53563"
+          }
+        },
+        {
+          "client_id": "843575948061-11ucrjubov95vu1o79n0di932v5orsmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxeLi5ZUYzMnaZ6kjq8ovH3u1z7xlC29I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843575948061-11ucrjubov95vu1o79n0di932v5orsmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
