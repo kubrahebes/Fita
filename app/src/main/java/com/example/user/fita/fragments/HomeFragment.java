@@ -6,12 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.user.fita.R;
 import com.example.user.fita.model.NormalInsan;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -29,6 +29,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         final View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
         database = FirebaseDatabase.getInstance();
@@ -36,6 +37,8 @@ public class HomeFragment extends Fragment {
 
         unbinder = ButterKnife.bind(this, rootView);
         return rootView;
+
+     
 
     }
 

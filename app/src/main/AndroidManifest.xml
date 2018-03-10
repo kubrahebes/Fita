@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MaleFemaleActivity" />
+        <activity android:name=".AgeActivity" />
+        <activity android:name=".NameSurnameActivity" />
+        <activity android:name=".WeightActivity" />
+        <activity android:name=".SplashActivity"></activity>
     </application>
 
 </manifest>

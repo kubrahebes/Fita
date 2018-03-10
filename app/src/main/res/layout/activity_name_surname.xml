@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/left_arrow"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="230dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#EC9694"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:text="Bize kendinden bahset" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="1000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="Isminizi girer misiniz?"/>
+    <EditText
+        android:layout_width="220dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="30dp"
+        android:background="#52bf7a"
+        android:text="Next"
+        />
+
+</LinearLayout>
