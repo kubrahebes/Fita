@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.user.fita.fragments.CommunityFragment">
+    tools:context="com.example.user.fita.fragments.FoodFragment">
     <LinearLayout    android:layout_height="match_parent"
         android:layout_marginTop="50dp"
         android:orientation="vertical"

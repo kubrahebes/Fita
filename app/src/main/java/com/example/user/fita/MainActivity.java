@@ -10,15 +10,15 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.example.user.fita.fragments.CommunityFragment;
-import com.example.user.fita.fragments.GrammerFragment;
+import com.example.user.fita.fragments.FoodFragment;
+import com.example.user.fita.fragments.UpdateFragment;
 import com.example.user.fita.fragments.HomeFragment;
 
 
 public class MainActivity extends AppCompatActivity {
-    private CommunityFragment communityFragment;
+    private FoodFragment communityFragment;
     private HomeFragment homeFragment;
-    private GrammerFragment grammerFragment;
+    private UpdateFragment grammerFragment;
     private BottomNavigationView mainNav;
     private FrameLayout frameLayout;
 
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         frameLayout = findViewById(R.id.main_frame);
 
         homeFragment=new HomeFragment();
-        grammerFragment=new GrammerFragment();
-        communityFragment=new CommunityFragment();
+        grammerFragment=new UpdateFragment();
+        communityFragment=new FoodFragment();
 
 
         /** this for setting the default fragment that will be displayed when the app is opened*/
