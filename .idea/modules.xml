@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Fita.iml" filepath="$PROJECT_DIR$/Fita.iml" />
+
       <module fileurl="file://C:\Users\Recodedharran\AndroidStudioProjects\Fita\Fita.iml" filepath="C:\Users\Recodedharran\AndroidStudioProjects\Fita\Fita.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\Recodedharran\AndroidStudioProjects\Fita\app\app.iml" filepath="C:\Users\Recodedharran\AndroidStudioProjects\Fita\app\app.iml" />
+
     </modules>
   </component>
 </project>
