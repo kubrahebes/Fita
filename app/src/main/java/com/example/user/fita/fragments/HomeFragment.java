@@ -21,8 +21,7 @@ import butterknife.Unbinder;
 public class HomeFragment extends Fragment {
     FirebaseDatabase database;
     DatabaseReference myRef;
-    @BindView(R.id.buton)
-    Button buton;
+
     Unbinder unbinder;
 
 
