@@ -28,6 +28,7 @@
             android:hint="Lütfen kullanıcı ismininizi giriniz" />
 
         <EditText
+            android:id="@+id/eMail"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -35,6 +36,7 @@
             android:hint="Lütfen mail adresinizi giriniz" />
 
         <EditText
+            android:id="@+id/password"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
