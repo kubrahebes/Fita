@@ -12,15 +12,23 @@ public class MaleFemaleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_male_female);
-        Button button = (Button) findViewById(R.id.erkek_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button erkekButton = (Button) findViewById(R.id.erkek_button);
+        Button kadinButton=(Button) findViewById(R.id.kadin_button);
+        erkekButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent second = new Intent(MaleFemaleActivity.this, AgeActivity.class);
                 startActivity(second);
-
-
             }
         });
+
+        kadinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MaleFemaleActivity.this,AgeActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

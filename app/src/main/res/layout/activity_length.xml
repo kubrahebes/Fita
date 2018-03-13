@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.user.fita.LengthActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Burasi boy icin sayfa olacak" />
+
+        <Button
+            android:id="@+id/length_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="30dp"
+            android:background="#52bf7a"
+            android:text="Next"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</ScrollView>

@@ -14,13 +14,12 @@
         android:background="#e9f5f0"
         tools:context="com.example.recodedharran.deneme.MainActivity">
 
-
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:src="@drawable/kiziicon"
-            android:id="@+id/imageView" />
+            android:src="@drawable/kiziicon" />
 
         <TextView
             android:id="@+id/edit_text_one"
@@ -45,8 +44,7 @@
             android:background="#e9f5f0"
             android:text="calori"
             android:textColor="#1c825d"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="230dp"
@@ -57,7 +55,7 @@
             android:background="#e9f5f0"
             android:text="index"
             android:textColor="#1c825d"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
     </RelativeLayout>
 

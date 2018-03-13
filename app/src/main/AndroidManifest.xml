@@ -20,7 +20,8 @@
         <activity android:name=".AgeActivity" />
         <activity android:name=".NameSurnameActivity" />
         <activity android:name=".WeightActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LengthActivity"></activity>
     </application>
 
 </manifest>
