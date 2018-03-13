@@ -16,10 +16,8 @@ public class WeightActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent second = new Intent(WeightActivity.this, NameSurnameActivity.class);
+                Intent second = new Intent(WeightActivity.this, LengthActivity.class);
                 startActivity(second);
-
-
             }
         });
     }

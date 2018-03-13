@@ -4,17 +4,25 @@
     android:layout_height="match_parent"
     tools:context="com.example.user.fita.fragments.UpdateFragment">
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         tools:context="com.example.eminesa.myapplication.MainActivity">
 
         <ImageView
             android:id="@+id/gender_image_view"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_alignBottom="@+id/gender_edit_text"
             android:layout_marginBottom="7dp"
             android:layout_marginLeft="15dp"
@@ -24,9 +32,8 @@
             android:id="@+id/gender_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/up_date_button"
             android:layout_marginLeft="65dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="50dp"
             android:layout_marginTop="55dp"
             android:backgroundTint="#bbb"
             android:hint="Cinsiyetiniz"
@@ -38,8 +45,8 @@
 
         <ImageView
             android:id="@+id/kilo_image_view"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_alignBottom="@+id/kilo_edit_text"
             android:layout_marginBottom="7dp"
             android:layout_marginLeft="15dp"
@@ -49,10 +56,9 @@
             android:id="@+id/kilo_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/up_date_button"
             android:layout_below="@+id/gender_edit_text"
             android:layout_marginLeft="65dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="50dp"
             android:backgroundTint="#bbb"
             android:hint="Kilonuz"
             android:inputType="number"
@@ -64,8 +70,8 @@
 
         <ImageView
             android:id="@+id/length_image_view"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_alignBottom="@+id/length_edit_text"
             android:layout_marginBottom="7dp"
             android:layout_marginLeft="15dp"
@@ -75,10 +81,9 @@
             android:id="@+id/length_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/up_date_button"
             android:layout_below="@+id/kilo_edit_text"
             android:layout_marginLeft="65dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="50dp"
             android:backgroundTint="#bbb"
             android:hint="Boyunuz"
             android:inputType="number"
@@ -90,15 +95,14 @@
 
         <ImageView
             android:id="@+id/age_image_view"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_alignBottom="@+id/age_edit_text"
             android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
             android:src="@drawable/yas" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-
             android:id="@+id/age_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,13 +124,13 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/age_edit_text"
             android:layout_below="@id/age_edit_text"
-            android:layout_marginRight="45dp"
             android:layout_marginTop="55dp"
+            android:layout_marginRight="60dp"
             android:background="#2fd99b"
             android:text="GÜNCELLE"
             android:textColor="#fff" />
 
     </RelativeLayout>
 
-
+    </ScrollView>
 </FrameLayout>

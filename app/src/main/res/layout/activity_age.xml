@@ -1,60 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:elevation="4dp"
-        app:navigationIcon="@drawable/left_arrow" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:background="@drawable/smallimage"
-        android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/smallimage" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:gravity="center_horizontal"
-        android:text="Bize kendinden bahset"
-        android:textColor="#EC9694"
-        android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:text="Bize kendinden bahset"
+            android:textColor="#EC9694"
+            android:textSize="16sp" />
 
-    <ProgressBar
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="225dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:max="100"
-        android:progress="50" />
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:max="100"
+            android:progress="50" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Kac yasındasınız?"
-        android:textColor="#000"
-        android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Kaç yaşındasınız?"
+            android:textColor="#000"
+            android:textSize="16sp" />
 
-    <EditText
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center" />
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:maxLength="3" />
 
-    <Button
-        android:id="@+id/age_button"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_margin="30dp"
-        android:background="#52bf7a"
-        android:text="Next" />
+        <Button
+            android:id="@+id/age_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="30dp"
+            android:background="#52bf7a"
+            android:text="Next"
+            android:textColor="#fff" />
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

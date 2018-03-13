@@ -18,8 +18,6 @@ public class AgeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent second = new Intent(AgeActivity.this, WeightActivity.class);
                 startActivity(second);
-
-
             }
         });
     }

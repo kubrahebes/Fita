@@ -1,54 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:elevation="4dp"
-        app:navigationIcon="@drawable/left_arrow" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/smallimage" />
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/smallimage" />
 
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:hint="Lütfen kullanıcı ismininizi giriniz" />
 
-    <EditText
-        android:id="@+id/user_name"
-        android:layout_width="290dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:hint="Lutfen kullanici ismini giriniz" />
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:hint="Lütfen mail adresinizi giriniz" />
 
-    <EditText
-        android:layout_width="290dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:hint="Lutfen mailinizi giriniz" />
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:hint="Lütfen şifrenizi giriniz"
+            android:inputType="textPassword" />
 
+        <Button
+            android:id="@+id/name_surname_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="25dp"
+            android:background="#52bf7a"
+            android:text="Next"
+            android:textColor="#fff" />
 
-    <EditText
-        android:layout_width="290dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:hint="Lutfen sifrenizi giriniz"
-        android:inputType="textPassword" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_margin="25dp"
-        android:background="#52bf7a"
-        android:text="Next" />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
