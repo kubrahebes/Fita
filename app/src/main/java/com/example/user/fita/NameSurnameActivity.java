@@ -88,7 +88,6 @@ public class NameSurnameActivity extends AppCompatActivity {
                             Toast.makeText(NameSurnameActivity.this, "Email address wrong or your password is too easy please change your password.", Toast.LENGTH_SHORT).show();
                         }
 
-
                     }
 
                 });
